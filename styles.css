@@ -1,0 +1,16 @@
+* {
+    font-family: Manrope, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--special-tan);
+}
+
+:root {
+    --special-pink: #CC76A1;
+    --special-green: #588157;
+    --special-tan: #FFFFFA;
+    --pink-hover: #c78aa9;
+    
+}

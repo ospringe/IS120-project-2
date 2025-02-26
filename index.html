@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <!-- Icon Kit -->
+    <script src="https://kit.fontawesome.com/9a8fd44cd8.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="flex bg-[var(--special-green)] text-[var(--special-tan)] h-17 items-center justify-between sticky">
+        <div class="flex text-2xl gap-4">
+            <a href="#"><i class="fa-solid fa-paw ml-4"></i></a>
+            <h2 class="hover:pointer">The Dapper Doggo</h2>
+        </div>
+        <div class="flex gap-7">
+            <a href="#" class="hover:underline underline-offset-6">Products</a>
+            <a href="#" class="hover:underline underline-offset-6">Contact</a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping mr-4"></i></a>
+        </div>        
+    </nav>
+
+    <!-- Product Display Section -->
+     <section class="w-screen h-4/5">
+        <div class="flex relative justify-around m-20">
+
+            <!-- Main Image -->
+            <img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt="Dog wearing a custom dog tag" class="w-1/3 h-1/3">
+
+            <!-- Product Info div -->
+            <div class="flex-col justify-around">
+                <h1 class="text-5xl mt-4 mr-29">Custom Doggo Tag</h1>
+                <h2 class="mt-8 text-2xl">Product Features</h2>
+                    <ul class="text-lg">
+                        <li class="before:content-['-'] before:mr-3">Stainless Steel</li>
+                        <li class="before:content-['-'] before:mr-3">Scratch-resistant</li>
+                        <li class="before:content-['-'] before:mr-3">Waterproof</li>
+                        <li class="before:content-['-'] before:mr-3">Rustproof</li>
+                        <li class="before:content-['-'] before:mr-3">Custom Engraving</li>
+                        <li class="before:content-['-'] before:mr-3">Split Ring</li>
+                    </ul>
+                <h2 class="text-xl">Add your personalization:</h2>
+                <label class="inputs" for="name"></label>
+                <input type="text" id="name" name="name" required minlength="1" maxlength="15" size="25" class="bg-slate-100 rounded-sm p-1 border border-slate-300"/>
+
+                <!-- Qty div -->
+                <div class="flex">
+                    <p class="text-xl">Qty:</p>
+                    <label class="inputs" for="qty"></label>
+                    <input type="text" placeholder="0" id="qty" name="qty" required minlength="1" maxlength="3" size="3" class="text-center ml-1 bg-slate-100 border border-slate-300 rounded-sm"/>
+                </div>
+
+                <!-- Price & add to cart div -->
+                <div class="flex items-center gap-10">
+                    <p class="text-2xl">$1,000.00</p>
+                    <button class="bg-[var(--special-pink)] text-[var(--special-tan)] text-xl rounded-4xl py-3 px-13 hover:cursor-pointer transition-all ease-in-out hover:duration-300 hover:bg-[var(--pink-hover)]">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Card Section -->
+     <section class="m-6">
+        <h1 class="flex justify-center text-5xl font-bold mb-13">Frequently Bought Together</h1>
+        <!-- Div for the cards -->
+        <div class="flex justify-center items-center gap-5">
+            
+            <!-- Card 1 -->
+            <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-white rounded-xl overflow-hidden items-center shadow-xl">
+                <img src="./img/charlesdeluvio-lJJlaUWYrPE-unsplash.jpg" alt="Dog in a rain coat" class="w-full h-[70%] object-cover">
+                <h2 class="text-3xl mt-3 font-bold">Rain Coat</h2>
+                <p class="mt-2.5 text-lg">$500.00</p>
+                <a href="#" class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add to Cart</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-white rounded-xl overflow-hidden items-center shadow-xl">
+                <img src="./img/raoul-croes-2TC9AOkHKLY-unsplash.jpg" alt="Dog with a custom leash" class="w-full h-[70%] object-cover">
+                <h2 class="text-3xl mt-3 font-bold">Custom Leash</h2>
+                <p class="mt-2.5 text-lg">$1,027.00</p>
+                <a href="#" class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add to Cart</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-white rounded-xl overflow-hidden items-center shadow-xl">
+                <img src="./img/jose-guilherme-opalwood-8EUKhB-0QKk-unsplash.jpg" alt="Dog in a harness" class="w-full h-[70%] object-cover">
+                <h2 class="text-3xl mt-3 font-bold">Doggo Harness</h2>
+                <p class="mt-2.5 text-lg">$375.00</p>
+                <a href="#" class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add to Cart</a>
+            </div>
+
+        </div>
+     </section>
+
+    <!-- Footer -->
+
+</body>
+</html>
+
+<!-- 2/25 
+***how do i make the gap between my underline and my words larger?
+
+ChatGPT said:
+Use underline-offset (Best & Easiest)
+Tailwind provides underline-offset utilities to control the distance between the underline and text.
+
+<p class="underline underline-offset-4">Underlined Text</p>
+
+You can adjust the number (underline-offset-4, underline-offset-8, etc.) for more spacing.
+-->
+
+<!-- 2/26
+***so my tailwind took away my bullets for my <ul>. How do i add dashes to the <li>?
+
+ChatGPT said:
+If Tailwind removed the default bullets from your <ul>, you can manually add dashes to each <li> using Tailwind classes. Here are a few approaches:
+
+Option 1: Manually Add Dashes with before:content
+You can use Tailwind’s before:content utility to add a dash before each <li>:
+
+<ul class="list-none">
+  <li class="before:content-['-'] before:mr-2">Item One</li>
+  <li class="before:content-['-'] before:mr-2">Item Two</li>
+  <li class="before:content-['-'] before:mr-2">Item Three</li>
+</ul>
+🔹 This removes the default bullets (list-none) and adds a - before each item using before:content-['-'].
+
+***How can i center the placeholder in my input box
+
+ChatGPT said:
+To center the placeholder text inside your input box, you just need to use Tailwind's text-center class:
+
+<input type="text" class="text-center p-2 border rounded" placeholder="Enter text..." />
+🔹 Explanation:
+text-center → Centers the text inside the input, including the placeholder.
+p-2 → Adds padding for better spacing.
+border rounded → Adds a border and rounded corners for styling.
+
+***how to add border on input box in tailwind. I tried what the tailwind cheat sheet said (border-black) but that didn't work
+
+ChatGPT said:
+If border-black isn't working, make sure you also include border to define a border width. In Tailwind, borders don't appear unless you specify a width. Try this:
+
+<input type="text" class="border border-black p-2 rounded" placeholder="Enter text..." />
+🔹 Explanation:
+border → Ensures the input actually has a border.
+border-black → Sets the border color to black.
+p-2 → Adds padding inside the input for better spacing.
+rounded → Gives slightly rounded corners (optional).
+-->
