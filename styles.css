@@ -1,5 +1,5 @@
 * {
-    font-family: Manrope, sans-serif;
+    font-family: var(--main-font);
     box-sizing: border-box;
 }
 
@@ -12,5 +12,9 @@ body {
     --special-green: #588157;
     --special-tan: #FFFFFA;
     --pink-hover: #c78aa9;
-    
+    --footer-tan: #fffffac5;
+    --footer-hover: #fffffaf0;
+    --main-font: Manrope, sans-serif;
+    --subscribe-color: rgb(240, 240, 240);
+    --icon-size: 1.875rem;
 }
