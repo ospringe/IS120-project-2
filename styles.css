@@ -19,3 +19,115 @@ body {
     --input-color: #f3f3f3;
     --input-border: #d7d7d7;
 }
+
+.shipping-bar {
+    background-color: var(--special-tan);
+    color: var(--special-green);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* 
+.shipping-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 1%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 1s;
+}
+
+.shipping-bar:hover::before {
+    left: 100%;
+} */
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-fade {
+    opacity: 0;
+    animation: cardFade 1s ease-out forwards;
+}
+
+.card-fade-1 { animation-delay: 0.4s; }
+.card-fade-2 { animation-delay: 0.8s; }
+.card-fade-3 { animation-delay: 1.2s; }
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.grid-styles {
+    border-radius: 0.75rem;
+    box-shadow: 1rem 1rem 1.5rem -0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+    
+.div1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+    background-color: var(--special-pink);
+    color: var(--special-tan);
+}
+
+.div2 { 
+    grid-area: 1 / 3 / 2 / 5; 
+    background-color: var(--special-green);
+    color: var(--special-tan);
+}
+
+.div3 { 
+    grid-area: 1 / 5 / 2 / 6; 
+    background-color: var(--special-tan);
+}
+
+.div4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: var(--special-green);
+    color: var(--special-tan);
+}
+
+.div5 { 
+    grid-area: 2 / 2 / 3 / 4; 
+    background-color: var(--special-tan);
+}
+
+.div6 { 
+    grid-area: 2 / 4 / 3 / 6; 
+    background-color: var(--special-pink);
+    color: var(--special-tan);
+}
+
+/* Tablets */
+@media (max-width: 940px) {
+    .card-section {
+
+    }
+
+    .cards-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        scale: 0.95;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+}

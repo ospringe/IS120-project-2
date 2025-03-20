@@ -25,6 +25,13 @@
 
 <body>
     <main>
+        <!-- Tiny bar thing -->
+        <section>
+            <div class="shipping-bar p-1.5">
+                <p class="text-sm font-light italic">Free shipping on U.S. orders</p>
+            </div>
+        </section>
+
 
         <!-- Nav bar -->
         <nav class="flex bg-[var(--special-green)] text-[var(--special-tan)] h-17 items-center justify-between sticky">
@@ -44,8 +51,18 @@
         <section class="w-full h-4/5">
             <div class="flex relative justify-around m-20">
 
-                <!-- Main Image -->
-                <img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt="Dog wearing a custom dog tag" class="w-1/3 h-1/3">
+                <div class="product-images w-1/2 m-10 flex">
+                    <!-- Smaller Images -->
+                     <div class="flex flex-col">
+                        <a href="#"><img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt=""></a>
+                        <a href=""><img src="./img/dog-tags/black.webp" alt="Black tag with name 'Chief'"></a>
+                        <a href=""><img src="./img/dog-tags/black2.webp" alt="Black tag with name 'Jameson'"></a>
+                        <a href=""><img src="./img/dog-tags/black3.webp" alt="Black tag with name 'Capone'"></a>
+                        <a href=""><img src="./img/dog-tags/black4.webp" alt="Black tag with name 'Harley'"></a>
+                     </div>
+                    <!-- Main Image -->
+                    <img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt="Dog wearing a custom dog tag" class="">
+                </div>
 
                 <!-- Product Info div -->
                 <div class="flex flex-col justify-around">
@@ -84,13 +101,13 @@
         </section>
 
         <!-- Card Section -->
-        <section class="m-17">
+        <section class="m-17 card-section">
             <h1 class="flex justify-center text-5xl font-bold mb-11">Frequently Bought Together</h1>
             <!-- Div for the cards -->
-            <div class="flex justify-center items-center gap-5">
+            <div class="flex justify-center items-center gap-5 cards-div">
                 
                 <!-- Rain Coat -->
-                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl">
+                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-1 card-fade">
                     <img src="./img/charlesdeluvio-lJJlaUWYrPE-unsplash.jpg" alt="Dog in a rain coat" class="w-full h-[70%] object-cover">
                     <h2 class="text-3xl mt-3 font-bold">Rain Coat</h2>
                     <p class="mt-2.5 text-lg">$499.99</p>
@@ -98,7 +115,7 @@
                 </div>
 
                 <!-- Custom Leash -->
-                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl">
+                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-2 card-fade">
                     <img src="./img/raoul-croes-2TC9AOkHKLY-unsplash.jpg" alt="Dog with a custom leash" class="w-full h-[70%] object-cover">
                     <h2 class="text-3xl mt-3 font-bold">Custom Leash</h2>
                     <p class="mt-2.5 text-lg">$1,029.99</p>
@@ -106,7 +123,7 @@
                 </div>
 
                 <!-- Doggo Harness -->
-                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl">
+                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-3 card-fade">
                     <img src="./img/jose-guilherme-opalwood-8EUKhB-0QKk-unsplash.jpg" alt="Dog in a harness" class="w-full h-[70%] object-cover">
                     <h2 class="text-3xl mt-3 font-bold">Doggo Harness</h2>
                     <p class="mt-2.5 text-lg">$374.99</p>
@@ -117,6 +134,83 @@
         </section>
         
     </main>
+
+    <!-- Grid - Reviews -->
+    <section class="w-full h-screen">
+        <div class="parent m-18">
+
+            <div class="div1 grid-styles">
+                <div class="flex gap-10 items-center">   
+                    <div class="flex items-center gap-3"> 
+                        <i class="fa-solid fa-user text-3xl"></i>
+                        <div class="flex flex-col">
+                            <h2>Lucy C.</h2>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-3xl">LOVE LOVE LOVE</h3>
+                </div>
+                <hr class="my-2">
+                <p>I ordered a custom dog tag for my golden retriever, Root Beer, and I am in LOVE! The engraving is super clear, and the design options are adorable. It arrived quickly, and the quality is top-notch. Now, Root Beer is the most stylish pup at the dog park! 🐶💖</p>
+            </div>
+
+            <div class="div2 grid-styles">
+                <div class="flex gap-3 items-center">     
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Madeline W.</h2>
+                </div>
+                <p>★ ★ ★ ★ ★</p>
+                <h3 class="font-bold text-xl">Best Leash I've Ever Bought!</h3>
+                <hr class="my-2">
+                <p>I got the custom dog leash for my energetic husky, Jagger, and it’s amazing! The material is super strong, and the custom engraving makes it unique. I love that I was able to add his name on it. It’s stylish AND practical. Will definitely order again!</p>
+            </div>
+
+            <div class="div3 grid-styles">
+                <div class="flex gap-3 items-center">    
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Cameron M.</h2>
+                </div>
+                <p>★ ★ ★ ★ ★</p>
+                <h3 class="font-bold text-xl">High-Quality & Durable!</h3>
+                <hr class="my-2">
+                <p>The custom dog tag is amazing—durable, high-quality, and the engraving lasts! Even after rough play, it still looks brand new.</p>
+            </div>
+
+            <div class="div4 grid-styles">
+                <div class="flex gap-3 items-center">     
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Samuel S.</h2>
+                </div>
+                <p>★ ★ ★ ★ ★</p>
+                <h3 class="font-bold text-xl">Best Store!</h3>
+                <hr class="my-2">
+                <p>Amazing quality and super stylish! The custom leash and tag were perfect, and shipping was fast. My pup looks so dapper! 🐶✨</p>
+            </div>
+
+            <div class="div5 grid-styles">
+                <div class="flex gap-3 items-center">    
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Abigail S.</h2>
+                </div>
+                <p>★ ★ ★ ★ ★</p>
+                <h3 class="font-bold text-xl">Absolutely Adorable!</h3>
+                <hr class="my-2">
+                <p>I bought the raincoat for my little corgi, and I couldn’t be happier! It fits perfectly, keeps him dry, and the quality is amazing. The material is lightweight but still protective, and the hood is just the cutest touch. Every time we go out in the rain, people stop to compliment how adorable he looks. It also dries quickly, which is a huge plus. If you want something both practical and stylish for your pup, this is it!</p>
+            </div>
+
+            <div class="div6 grid-styles">
+                <div class="flex gap-3 items-center">    
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Christopher K.</h2>
+                </div>
+                <p>★ ★ ★ ★ ★</p>
+                <h3 class="font-bold text-xl">Game-Changer for Walks!</h3>
+                <hr class="my-2">
+                <p>This harness has completely changed the way I walk my dog! My lab used to pull so much, and regular collars would just choke him. With this harness, the pressure is evenly distributed, so he’s comfortable and easier to control. It’s sturdy, easy to put on, and doesn’t rub or irritate his skin. Walks are now so much more enjoyable for both of us! If your pup is a puller, this is a lifesaver.</p>
+            </div>
+
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -162,7 +256,7 @@
                         <label class="inputs" for="email"></label>
                         <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL" minlength="6" maxlength="30" size="33" class="bg-[var(--input-color)] border border-[var(--input-border)] rounded-l-md text-slate-800 p-1 pl-2 h-10"/>
                         <button>
-                            <a href="#" class="rounded-r-md bg-[var(--subscribe-color)] text-[var(--special-green)] p-2 border border-slate-300 hover:bg-[var(--special-green)] hover:text-[var(--special-tan)] transition-all ease-in-out hover:duration-300">Subscribe</a>
+                            <a href="https://www.webkinz.com/" target="_blank" class="rounded-r-md bg-[var(--subscribe-color)] text-[var(--special-green)] p-2 border border-slate-300 hover:bg-[var(--special-green)] hover:text-[var(--special-tan)] transition-all ease-in-out hover:duration-300">Subscribe</a>
                         </button>
                     </div>
                     <h2 class="text-2xl font-bold">Connect with us</h2>
@@ -207,70 +301,54 @@
 </body>
 </html>
 
-<!-- 2/25 
-***how do i make the gap between my underline and my words larger?
 
-ChatGPT said:
-Use underline-offset (Best & Easiest)
-Tailwind provides underline-offset utilities to control the distance between the underline and text.
+<!-- 3/19
+what would be the best way to implement a picture and or icon of five stars for a review section of my website?
 
-<p class="underline underline-offset-4">Underlined Text</p>
-
-You can adjust the number (underline-offset-4, underline-offset-8, etc.) for more spacing.
--->
-
-<!-- 2/26
-***so my tailwind took away my bullets for my <ul>. How do i add dashes to the <li>?
-
-ChatGPT said:
-If Tailwind removed the default bullets from your <ul>, you can manually add dashes to each <li> using Tailwind classes. Here are a few approaches:
-
-Option 1: Manually Add Dashes with before:content
-You can use Tailwind’s before:content utility to add a dash before each <li>:
-
-<ul class="list-none">
-  <li class="before:content-['-'] before:mr-2">Item One</li>
-  <li class="before:content-['-'] before:mr-2">Item Two</li>
-  <li class="before:content-['-'] before:mr-2">Item Three</li>
-</ul>
-🔹 This removes the default bullets (list-none) and adds a - before each item using before:content-['-'].
-
-***How can i center the placeholder in my input box
-
-ChatGPT said:
-To center the placeholder text inside your input box, you just need to use Tailwind's text-center class:
-
-<input type="text" class="text-center p-2 border rounded" placeholder="Enter text..." />
-🔹 Explanation:
-text-center → Centers the text inside the input, including the placeholder.
-p-2 → Adds padding for better spacing.
-border rounded → Adds a border and rounded corners for styling.
-
-***how to add border on input box in tailwind. I tried what the tailwind cheat sheet said (border-black) but that didn't work
-
-ChatGPT said:
-If border-black isn't working, make sure you also include border to define a border width. In Tailwind, borders don't appear unless you specify a width. Try this:
-
-<input type="text" class="border border-black p-2 rounded" placeholder="Enter text..." />
-🔹 Explanation:
-border → Ensures the input actually has a border.
-border-black → Sets the border color to black.
-p-2 → Adds padding inside the input for better spacing.
-rounded → Gives slightly rounded corners (optional).
--->
-
-<!-- 2/27
-***How could I implement a custom color into my input box box shadow in tailwind css?
-
-ChatGPT said:
-In Tailwind CSS, you can customize the box shadow color by using shadow-[custom-value] combined with shadow utility classes.
-
-1️⃣ Using Tailwind’s Default Shadows with Custom Colors
-You can add a color to Tailwind's built-in shadow-md, shadow-lg, etc. by combining it with shadow-[color]:
+ChatGPT:
+1. Using Unicode Stars (Super Simple & No Images Needed)
+If you just need a static star rating, the easiest way is using Unicode characters:
 
 html
-Copy
-Edit
-<input type="text" class="shadow-md shadow-blue-500 focus:shadow-red-500 p-2 border rounded">
-✅ This adds a blue shadow by default and changes to red when focused. 
+Copy code
+<p>★★★★★</p>  
+<p>★★★★☆</p>
+🛠️ Best for: Quick, lightweight, and no images or CSS required.
+-->
+
+<!-- 3/19
+So, this is my code for my styles for an animation of three cards: 
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-fade {
+    opacity: 0;
+    animation: cardFade 1s ease-out forwards;
+}
+
+.card-fade-1 { animation-delay: 0.4s; }
+.card-fade-2 { animation-delay: 0.8s; }
+.card-fade-3 { animation-delay: 1.2s; }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+How could I make it so that it starts when I scroll to that part of the page instead of when first entering the page?
+
+ChatGPT:
+
 -->
