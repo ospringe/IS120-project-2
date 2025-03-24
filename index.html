@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="./img/stroke-cute-dog-122101.webp">
-    
+    <link rel="icon" type="image/png" href="./img/stroke-cute-dog-122101.webp">
+
     <!-- Tailwind -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    
+
     <!-- Icon Kit -->
     <script src="https://kit.fontawesome.com/9a8fd44cd8.js" crossorigin="anonymous"></script>
 
@@ -40,8 +40,8 @@
                 <li><a href="#" class="hover:underline underline-offset-6 ml-4">Contact</a></li>
                 <li><a href="#" class="hover:underline underline-offset-6 ml-4">Search</a></li>
                 <li><a href="#" class="hover:underline underline-offset-6 ml-4">Cart</a></li>
-            </ul>      
-        
+            </ul>
+
             <div class="flex text-2xl gap-4">
                 <a href="#"><i class="fa-solid fa-paw ml-4"></i></a>
                 <h2 class="hover:pointer">The Dapper Doggo</h2>
@@ -52,7 +52,7 @@
                 <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping mr-4"></i></a></li>
                 <li class="menu-button" onclick=showSidebar()><i class="fa-solid fa-bars"></i></li>
-            </ul>      
+            </ul>
         </nav>
 
         <!-- Product Display Section -->
@@ -68,39 +68,45 @@
                         <div class="product-div5"><img src="./img/dog-tags/black4.webp" alt="black bone dog tag"></div>
                     </div>
 
-                    <div class="product-div6"><img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt="black bone dog tag"></div>
+                    <div class="product-div6"><img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg"
+                            alt="black bone dog tag"></div>
 
                     <!-- Product Info div -->
                     <div class="product-info flex flex-col gap-4 ps-4">
                         <h1 class="text-5xl">Custom Doggo Tag</h1>
                         <div class="flex flex-col gap-3">
                             <h2 class="mt-3 text-2xl">Product Features</h2>
-                                <ul class="text-lg">
-                                    <li class="before:content-['-'] before:mr-3">Stainless Steel</li>
-                                    <li class="before:content-['-'] before:mr-3">Scratch-resistant</li>
-                                    <li class="before:content-['-'] before:mr-3">Waterproof</li>
-                                    <li class="before:content-['-'] before:mr-3">Rustproof</li>
-                                    <li class="before:content-['-'] before:mr-3">Custom Engraving</li>
-                                    <li class="before:content-['-'] before:mr-3">Split Ring</li>
-                                </ul>
-                            </div>
+                            <ul class="text-lg">
+                                <li class="before:content-['-'] before:mr-3">Stainless Steel</li>
+                                <li class="before:content-['-'] before:mr-3">Scratch-resistant</li>
+                                <li class="before:content-['-'] before:mr-3">Waterproof</li>
+                                <li class="before:content-['-'] before:mr-3">Rustproof</li>
+                                <li class="before:content-['-'] before:mr-3">Custom Engraving</li>
+                                <li class="before:content-['-'] before:mr-3">Split Ring</li>
+                            </ul>
+                        </div>
                         <div class="flex flex-col gap-1">
                             <h2 class="text-xl">Add your personalization:</h2>
                             <label class="inputs" for="name"></label>
-                            <input type="text" id="name" name="name" required minlength="1" maxlength="15" size="25" class="w-58 bg-[var(--input-color)] rounded-sm p-1 border border-[var(--input-border)]"/>
+                            <input type="text" id="name" name="name" required minlength="1" maxlength="15" size="25"
+                                class="w-58 bg-[var(--input-color)] rounded-sm p-1 border border-[var(--input-border)]" />
                         </div>
-    
+
                         <!-- Qty div -->
                         <div class="flex">
                             <p class="text-xl">Qty:</p>
                             <label class="inputs" for="qty"></label>
-                            <input type="text" placeholder="0" id="qty" name="qty" required minlength="1" maxlength="3" size="3" class="text-center ml-1 bg-[var(--input-color)] border border-[var(--input-border)] rounded-sm"/>
+                            <input type="text" placeholder="0" id="qty" name="qty" required minlength="1" maxlength="3"
+                                size="3"
+                                class="text-center ml-1 bg-[var(--input-color)] border border-[var(--input-border)] rounded-sm" />
                         </div>
-    
+
                         <!-- Price & add to cart div -->
                         <div class="flex items-center gap-10">
                             <p class="text-2xl">$999.99</p>
-                            <button class="bg-[var(--special-pink)] text-[var(--special-tan)] text-xl rounded-4xl py-3 px-13 hover:cursor-pointer transition-all ease-in-out hover:duration-300 hover:bg-[var(--pink-hover)]">Add to Cart</button>
+                            <button
+                                class="bg-[var(--special-pink)] text-[var(--special-tan)] text-xl rounded-4xl py-3 px-13 hover:cursor-pointer transition-all ease-in-out hover:duration-300 hover:bg-[var(--pink-hover)]">Add
+                                to Cart</button>
                         </div>
                     </div>
 
@@ -114,44 +120,56 @@
             <h1 class="flex justify-center text-5xl font-bold mb-11">Frequently Bought Together</h1>
             <!-- Div for the cards -->
             <div class="flex justify-center items-center gap-5 cards-div">
-                
+
                 <!-- Rain Coat -->
-                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-1 card-fade">
-                    <img src="./img/charlesdeluvio-lJJlaUWYrPE-unsplash.jpg" alt="Dog in a rain coat" class="w-full h-[70%] object-cover">
+                <div
+                    class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-1 card-fade-normal">
+                    <img src="./img/charlesdeluvio-lJJlaUWYrPE-unsplash.jpg" alt="Dog in a rain coat"
+                        class="w-full h-[70%] object-cover">
                     <h2 class="text-3xl mt-3 font-bold">Rain Coat</h2>
                     <p class="mt-2.5 text-lg">$499.99</p>
-                    <a href="#" class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add to Cart</a>
+                    <a href="#"
+                        class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add
+                        to Cart</a>
                 </div>
 
                 <!-- Custom Leash -->
-                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-2 card-fade">
-                    <img src="./img/raoul-croes-2TC9AOkHKLY-unsplash.jpg" alt="Dog with a custom leash" class="w-full h-[70%] object-cover">
+                <div
+                    class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-2 card-fade-normal">
+                    <img src="./img/raoul-croes-2TC9AOkHKLY-unsplash.jpg" alt="Dog with a custom leash"
+                        class="w-full h-[70%] object-cover">
                     <h2 class="text-3xl mt-3 font-bold">Custom Leash</h2>
                     <p class="mt-2.5 text-lg">$1,029.99</p>
-                    <a href="#" class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add to Cart</a>
+                    <a href="#"
+                        class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add
+                        to Cart</a>
                 </div>
 
                 <!-- Doggo Harness -->
-                <div class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-3 card-fade">
-                    <img src="./img/jose-guilherme-opalwood-8EUKhB-0QKk-unsplash.jpg" alt="Dog in a harness" class="w-full h-[70%] object-cover">
+                <div
+                    class="flex flex-col bg-[var(--special-green)] w-86 h-125 text-[var(--special-tan)] rounded-xl overflow-hidden items-center shadow-xl card-fade-3 card-fade-normal">
+                    <img src="./img/jose-guilherme-opalwood-8EUKhB-0QKk-unsplash.jpg" alt="Dog in a harness"
+                        class="w-full h-[70%] object-cover">
                     <h2 class="text-3xl mt-3 font-bold">Doggo Harness</h2>
                     <p class="mt-2.5 text-lg">$374.99</p>
-                    <a href="#" class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add to Cart</a>
+                    <a href="#"
+                        class="bg-[var(--special-pink)] rounded-4xl text-lg py-1 px-9 mt-2 hover:bg-[var(--pink-hover)] transition-all ease-in-out hover:duration-300">Add
+                        to Cart</a>
                 </div>
 
             </div>
         </section>
-        
+
     </main>
 
     <!-- Grid - Reviews -->
     <section class="w-full h-auto">
         <h1 class="text-center text-5xl font-bold">10,000+ Five-star Reviews</h1>
         <div class="parent m-18">
-            
+
             <div class="div1 grid-styles">
-                <div class="review-headings">   
-                    <div class="flex items-center gap-3"> 
+                <div class="review-headings">
+                    <div class="flex items-center gap-3">
                         <i class="fa-solid fa-user text-3xl"></i>
                         <div class="flex flex-col">
                             <h2>Lucy C.</h2>
@@ -161,12 +179,14 @@
                     <h3 class="font-bold text-3xl">LOVE LOVE LOVE</h3>
                 </div>
                 <hr class="my-2">
-                <p>I ordered a custom dog tag for my golden retriever, Root Beer, and I am in LOVE! The engraving is super clear, and the design options are adorable. It arrived quickly, and the quality is top-notch. Now, Root Beer is the most stylish pup at the dog park!</p>
+                <p>I ordered a custom dog tag for my golden retriever, Root Beer, and I am in LOVE! The engraving is
+                    super clear, and the design options are adorable. It arrived quickly, and the quality is top-notch.
+                    Now, Root Beer is the most stylish pup at the dog park!</p>
             </div>
 
             <div class="div2 grid-styles">
-                <div class="flex justify-between items-center review-headings">   
-                    <div class="flex items-center gap-3"> 
+                <div class="flex justify-between items-center review-headings">
+                    <div class="flex items-center gap-3">
                         <i class="fa-solid fa-user text-3xl"></i>
                         <div class="flex flex-col">
                             <h2>Madeline W.</h2>
@@ -176,12 +196,14 @@
                     <h3 class="font-bold text-3xl">Best Leash Ever!</h3>
                 </div>
                 <hr class="my-2">
-                <p>I got the custom dog leash for my energetic husky, Jagger, and it's amazing! The material is super strong, and the custom engraving makes it unique. I love that I was able to add his name on it. It's stylish AND practical. Will definitely order again!</p>
+                <p>I got the custom dog leash for my energetic husky, Jagger, and it's amazing! The material is super
+                    strong, and the custom engraving makes it unique. I love that I was able to add his name on it. It's
+                    stylish AND practical. Will definitely order again!</p>
             </div>
 
             <div class="div3 grid-styles">
                 <div class="small-review-headings">
-                    <div class="flex gap-3 items-center">    
+                    <div class="flex gap-3 items-center">
                         <i class="fa-solid fa-user text-2xl"></i>
                         <div class="text-sm">
                             <h2>Cameron M.</h2>
@@ -196,7 +218,7 @@
 
             <div class="div4 grid-styles">
                 <div class="small-review-headings">
-                    <div class="flex gap-3 items-center">     
+                    <div class="flex gap-3 items-center">
                         <i class="fa-solid fa-user text-2xl"></i>
                         <div class="text-sm">
                             <h2>Samuel S.</h2>
@@ -206,12 +228,13 @@
                     <h3 class="font-bold text-2xl">Best Store!</h3>
                 </div>
                 <hr class="my-2">
-                <p>Amazing quality, stylish, and fast shipping! The leash and tag were perfect—my pup looks so dapper!</p>
+                <p>Amazing quality, stylish, and fast shipping! The leash and tag were perfect—my pup looks so dapper!
+                </p>
             </div>
 
             <div class="div5 grid-styles">
-                <div class="review-headings">   
-                    <div class="flex items-center gap-3"> 
+                <div class="review-headings">
+                    <div class="flex items-center gap-3">
                         <i class="fa-solid fa-user text-3xl"></i>
                         <div class="flex flex-col">
                             <h2>Abigail S.</h2>
@@ -221,12 +244,14 @@
                     <h3 class="font-bold text-3xl">SO SO Adorable!</h3>
                 </div>
                 <hr class="my-2">
-                <p>I got the raincoat for my corgi, and it's perfect! Lightweight yet protective, it keeps him dry and comfy. The hood is adorable, and we get so many compliments. It also dries quickly—such a great buy!</p>
+                <p>I got the raincoat for my corgi, and it's perfect! Lightweight yet protective, it keeps him dry and
+                    comfy. The hood is adorable, and we get so many compliments. It also dries quickly—such a great buy!
+                </p>
             </div>
 
             <div class="div6 grid-styles">
-                <div class="flex justify-between items-center review-headings">   
-                    <div class="flex items-center gap-3 "> 
+                <div class="flex justify-between items-center review-headings">
+                    <div class="flex items-center gap-3 ">
                         <i class="fa-solid fa-user text-3xl"></i>
                         <div class="flex flex-col">
                             <h2>Christopher K.</h2>
@@ -236,7 +261,8 @@
                     <h3 class="font-bold text-3xl">Great for Walks!</h3>
                 </div>
                 <hr class="my-2">
-                <p>This harness makes walks so much easier! My lab used to pull and choke himself, but now the pressure is evenly distributed. It's sturdy, comfy, and easy to put on. A must-have for strong pullers!</p>
+                <p>This harness makes walks so much easier! My lab used to pull and choke himself, but now the pressure
+                    is evenly distributed. It's sturdy, comfy, and easy to put on. A must-have for strong pullers!</p>
             </div>
 
         </div>
@@ -254,14 +280,18 @@
                     <div class="flex flex-col justify-between">
                         <h3 class="text-lg font-bold">About Us</h3>
                         <ul>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Our Story</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Careers</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Our
+                                    Story</a></li>
+                            <li><a href="#"
+                                    class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Careers</a></li>
                         </ul>
 
                         <h3 class="text-lg font-bold">My Account</h3>
                         <ul>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Sign In</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">My Orders</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Sign
+                                    In</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">My
+                                    Orders</a></li>
                         </ul>
                     </div>
 
@@ -269,12 +299,18 @@
                     <div>
                         <h3 class="text-lg font-bold">Customer Service</h3>
                         <ul>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">FAQs</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Contact Us</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Text Sign Up</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Shipping Information</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Return Policy</a></li>
-                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Reviews</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">FAQs</a>
+                            </li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Contact
+                                    Us</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Text Sign
+                                    Up</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Shipping
+                                    Information</a></li>
+                            <li><a href="#" class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Return
+                                    Policy</a></li>
+                            <li><a href="#"
+                                    class="text-[var(--footer-tan)] hover:text-[var(--footer-hover)]">Reviews</a></li>
                         </ul>
                     </div>
 
@@ -285,9 +321,12 @@
                     <!-- Lime div -->
                     <div class="flex">
                         <label class="inputs" for="email"></label>
-                        <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL" minlength="6" maxlength="30" size="33" class="bg-[var(--input-color)] border border-[var(--input-border)] rounded-l-md text-slate-800 p-1 pl-2 h-10"/>
+                        <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL" minlength="6"
+                            maxlength="30" size="33"
+                            class="bg-[var(--input-color)] border border-[var(--input-border)] rounded-l-md text-slate-800 p-1 pl-2 h-10" />
                         <button>
-                            <a href="https://www.webkinz.com/" target="_blank" class="rounded-r-md bg-[var(--subscribe-color)] text-[var(--special-green)] p-2 border border-slate-300 hover:bg-[var(--special-green)] hover:text-[var(--special-tan)] transition-all ease-in-out hover:duration-300">Subscribe</a>
+                            <a href="https://www.webkinz.com/" target="_blank"
+                                class="rounded-r-md bg-[var(--subscribe-color)] text-[var(--special-green)] p-2 border border-slate-300 hover:bg-[var(--special-green)] hover:text-[var(--special-tan)] transition-all ease-in-out hover:duration-300">Subscribe</a>
                         </button>
                     </div>
                     <h2 class="text-2xl font-bold">Connect with us</h2>
@@ -308,13 +347,15 @@
                         <!-- Facebook -->
                         <a href="#">
                             <div class="w-11 h-11 rounded-4xl bg-[var(--special-tan)] flex justify-center items-center">
-                                <i class="fa-brands fa-facebook text-[var(--special-tan)] bg-[var(--special-green)] text-5xl"></i>
+                                <i
+                                    class="fa-brands fa-facebook text-[var(--special-tan)] bg-[var(--special-green)] text-5xl"></i>
                             </div>
                         </a>
                         <!-- Pinterest -->
                         <a href="#">
                             <div class="w-11 h-11 rounded-4xl bg-[var(--special-tan)] flex justify-center items-center">
-                                <i class="fa-brands fa-pinterest text-[var(--special-tan)] bg-[var(--special-green)]  text-5xl"></i>
+                                <i
+                                    class="fa-brands fa-pinterest text-[var(--special-tan)] bg-[var(--special-green)]  text-5xl"></i>
                             </div>
                         </a>
                     </div>
@@ -325,23 +366,39 @@
             <div class="flex flex-col justify-center items-center pt-15 text-sm text-[var(--footer-tan)]">
                 <p>© 2025 The Dapper Doggo. All rights reserved.</p>
             </div>
-            
+
         </div>
     </footer>
 
     <!-- Java Script -->
     <script>
-        function showSidebar(){
+        function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
         }
-        function hideSidebar(){
+        function hideSidebar() {
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+
+        document.addEventListener('scroll', function () {
+            const fadeCards = document.querySelectorAll('.card-fade-normal');
+
+            fadeCards.forEach(card => {
+                if (card.getBoundingClientRect().top < window.innerHeight) {
+                    card.classList.add('card-fade-in');
+                }
+                // if out of view
+                if (card.getBoundingClientRect().top > window.innerHeight || card.getBoundingClientRect().bottom < 0) {
+                    card.classList.remove('card-fade-in');
+                }
+            });
+        })
+
     </script>
 
 </body>
+
 </html>
 
 
