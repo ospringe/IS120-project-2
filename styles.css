@@ -125,9 +125,9 @@ nav {
     .product-parent {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 3fr 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        width: auto;
     }
 
     .product-info {
@@ -139,16 +139,21 @@ nav {
         grid-column: 1;
         flex-direction: row;
         align-items: start;
+        flex-wrap: wrap;
 
     }
     .product-div6 {
-        max-width: 100%;
-        height: auto;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
         overflow: hidden;
-    }
-    .product-div6 img {
-        object-fit: cover;
-    }
+  }
+  .product-div6 img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    max-width: none !important;
+  }
 }
 
 /* Card animation */
