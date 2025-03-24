@@ -32,71 +32,80 @@
             </div>
         </section>
 
-
         <!-- Nav bar -->
-        <nav class="flex bg-[var(--special-green)] text-[var(--special-tan)] h-17 items-center justify-between sticky">
+        <nav class="flex bg-[var(--special-green)] text-[var(--special-tan)] items-center justify-between h-17 sticky">
+            <ul class="flex justify-start gap-5 sidebar">
+                <li onclick=hideSidebar()><i class="fa-solid fa-xmark text-2xl ml-4 mt-4 menu-ex"></i></li>
+                <li><a href="#" class="hover:underline underline-offset-6 ml-4">Products</a></li>
+                <li><a href="#" class="hover:underline underline-offset-6 ml-4">Contact</a></li>
+                <li><a href="#" class="hover:underline underline-offset-6 ml-4">Search</a></li>
+                <li><a href="#" class="hover:underline underline-offset-6 ml-4">Cart</a></li>
+            </ul>      
+        
             <div class="flex text-2xl gap-4">
                 <a href="#"><i class="fa-solid fa-paw ml-4"></i></a>
                 <h2 class="hover:pointer">The Dapper Doggo</h2>
             </div>
-            <div class="flex gap-7">
-                <a href="#" class="hover:underline underline-offset-6">Products</a>
-                <a href="#" class="hover:underline underline-offset-6">Contact</a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping mr-4"></i></a>
-            </div>        
+            <ul class="flex gap-7">
+                <li class="hideOnMobile"><a href="#" class="hover:underline underline-offset-6">Products</a></li>
+                <li class="hideOnMobile"><a href="#" class="hover:underline underline-offset-6">Contact</a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="hideOnMobile"><a href="#"><i class="fa-solid fa-cart-shopping mr-4"></i></a></li>
+                <li class="menu-button" onclick=showSidebar()><i class="fa-solid fa-bars"></i></li>
+            </ul>      
         </nav>
 
         <!-- Product Display Section -->
-        <section class="w-full h-4/5">
+        <section class="w-full h-4/5 z-10 flex justify-around">
+
             <div class="flex relative justify-around m-20">
 
-                <div class="product-images w-1/2 m-10 flex">
-                    <!-- Smaller Images -->
-                     <div class="flex flex-col">
-                        <a href="#"><img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt=""></a>
-                        <a href=""><img src="./img/dog-tags/black.webp" alt="Black tag with name 'Chief'"></a>
-                        <a href=""><img src="./img/dog-tags/black2.webp" alt="Black tag with name 'Jameson'"></a>
-                        <a href=""><img src="./img/dog-tags/black3.webp" alt="Black tag with name 'Capone'"></a>
-                        <a href=""><img src="./img/dog-tags/black4.webp" alt="Black tag with name 'Harley'"></a>
-                     </div>
-                    <!-- Main Image -->
-                    <img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt="Dog wearing a custom dog tag" class="">
-                </div>
+                <div class="product-parent">
+                    <div class="smaller-images">
+                        <div class="product-div2"><img src="./img/dog-tags/black.webp" alt="black bone dog tag"></div>
+                        <div class="product-div3"><img src="./img/dog-tags/black2.webp" alt="black bone dog tag"></div>
+                        <div class="product-div4"><img src="./img/dog-tags/black3.webp" alt="black bone dog tag"></div>
+                        <div class="product-div5"><img src="./img/dog-tags/black4.webp" alt="black bone dog tag"></div>
+                    </div>
 
-                <!-- Product Info div -->
-                <div class="flex flex-col justify-around">
-                    <h1 class="text-5xl mt-4 mr-29">Custom Doggo Tag</h1>
-                    <div class="flex flex-col gap-3">
-                        <h2 class="mt-3 text-2xl">Product Features</h2>
-                            <ul class="text-lg">
-                                <li class="before:content-['-'] before:mr-3">Stainless Steel</li>
-                                <li class="before:content-['-'] before:mr-3">Scratch-resistant</li>
-                                <li class="before:content-['-'] before:mr-3">Waterproof</li>
-                                <li class="before:content-['-'] before:mr-3">Rustproof</li>
-                                <li class="before:content-['-'] before:mr-3">Custom Engraving</li>
-                                <li class="before:content-['-'] before:mr-3">Split Ring</li>
-                            </ul>
+                    <div class="product-div6"><img src="./img/victor-ballesteros-MxbmTpbjMqs-unsplash-copy.jpg" alt="black bone dog tag"></div>
+
+                    <!-- Product Info div -->
+                    <div class="product-info flex flex-col gap-4 ps-4">
+                        <h1 class="text-5xl">Custom Doggo Tag</h1>
+                        <div class="flex flex-col gap-3">
+                            <h2 class="mt-3 text-2xl">Product Features</h2>
+                                <ul class="text-lg">
+                                    <li class="before:content-['-'] before:mr-3">Stainless Steel</li>
+                                    <li class="before:content-['-'] before:mr-3">Scratch-resistant</li>
+                                    <li class="before:content-['-'] before:mr-3">Waterproof</li>
+                                    <li class="before:content-['-'] before:mr-3">Rustproof</li>
+                                    <li class="before:content-['-'] before:mr-3">Custom Engraving</li>
+                                    <li class="before:content-['-'] before:mr-3">Split Ring</li>
+                                </ul>
+                            </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-xl">Add your personalization:</h2>
+                            <label class="inputs" for="name"></label>
+                            <input type="text" id="name" name="name" required minlength="1" maxlength="15" size="25" class="w-58 bg-[var(--input-color)] rounded-sm p-1 border border-[var(--input-border)]"/>
                         </div>
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-xl">Add your personalization:</h2>
-                        <label class="inputs" for="name"></label>
-                        <input type="text" id="name" name="name" required minlength="1" maxlength="15" size="25" class="w-58 bg-[var(--input-color)] rounded-sm p-1 border border-[var(--input-border)]"/>
+    
+                        <!-- Qty div -->
+                        <div class="flex">
+                            <p class="text-xl">Qty:</p>
+                            <label class="inputs" for="qty"></label>
+                            <input type="text" placeholder="0" id="qty" name="qty" required minlength="1" maxlength="3" size="3" class="text-center ml-1 bg-[var(--input-color)] border border-[var(--input-border)] rounded-sm"/>
+                        </div>
+    
+                        <!-- Price & add to cart div -->
+                        <div class="flex items-center gap-10">
+                            <p class="text-2xl">$999.99</p>
+                            <button class="bg-[var(--special-pink)] text-[var(--special-tan)] text-xl rounded-4xl py-3 px-13 hover:cursor-pointer transition-all ease-in-out hover:duration-300 hover:bg-[var(--pink-hover)]">Add to Cart</button>
+                        </div>
                     </div>
 
-                    <!-- Qty div -->
-                    <div class="flex">
-                        <p class="text-xl">Qty:</p>
-                        <label class="inputs" for="qty"></label>
-                        <input type="text" placeholder="0" id="qty" name="qty" required minlength="1" maxlength="3" size="3" class="text-center ml-1 bg-[var(--input-color)] border border-[var(--input-border)] rounded-sm"/>
-                    </div>
-
-                    <!-- Price & add to cart div -->
-                    <div class="flex items-center gap-10">
-                        <p class="text-2xl">$999.99</p>
-                        <button class="bg-[var(--special-pink)] text-[var(--special-tan)] text-xl rounded-4xl py-3 px-13 hover:cursor-pointer transition-all ease-in-out hover:duration-300 hover:bg-[var(--pink-hover)]">Add to Cart</button>
-                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -136,11 +145,12 @@
     </main>
 
     <!-- Grid - Reviews -->
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
+        <h1 class="text-center text-5xl font-bold">10,000+ Five-star Reviews</h1>
         <div class="parent m-18">
-
+            
             <div class="div1 grid-styles">
-                <div class="flex gap-10 items-center">   
+                <div class="review-headings">   
                     <div class="flex items-center gap-3"> 
                         <i class="fa-solid fa-user text-3xl"></i>
                         <div class="flex flex-col">
@@ -151,62 +161,82 @@
                     <h3 class="font-bold text-3xl">LOVE LOVE LOVE</h3>
                 </div>
                 <hr class="my-2">
-                <p>I ordered a custom dog tag for my golden retriever, Root Beer, and I am in LOVE! The engraving is super clear, and the design options are adorable. It arrived quickly, and the quality is top-notch. Now, Root Beer is the most stylish pup at the dog park! 🐶💖</p>
+                <p>I ordered a custom dog tag for my golden retriever, Root Beer, and I am in LOVE! The engraving is super clear, and the design options are adorable. It arrived quickly, and the quality is top-notch. Now, Root Beer is the most stylish pup at the dog park!</p>
             </div>
 
             <div class="div2 grid-styles">
-                <div class="flex gap-3 items-center">     
-                    <i class="fa-solid fa-user"></i>
-                    <h2>Madeline W.</h2>
+                <div class="flex justify-between items-center review-headings">   
+                    <div class="flex items-center gap-3"> 
+                        <i class="fa-solid fa-user text-3xl"></i>
+                        <div class="flex flex-col">
+                            <h2>Madeline W.</h2>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-3xl">Best Leash Ever!</h3>
                 </div>
-                <p>★ ★ ★ ★ ★</p>
-                <h3 class="font-bold text-xl">Best Leash I've Ever Bought!</h3>
                 <hr class="my-2">
-                <p>I got the custom dog leash for my energetic husky, Jagger, and it’s amazing! The material is super strong, and the custom engraving makes it unique. I love that I was able to add his name on it. It’s stylish AND practical. Will definitely order again!</p>
+                <p>I got the custom dog leash for my energetic husky, Jagger, and it's amazing! The material is super strong, and the custom engraving makes it unique. I love that I was able to add his name on it. It's stylish AND practical. Will definitely order again!</p>
             </div>
 
             <div class="div3 grid-styles">
-                <div class="flex gap-3 items-center">    
-                    <i class="fa-solid fa-user"></i>
-                    <h2>Cameron M.</h2>
+                <div class="small-review-headings">
+                    <div class="flex gap-3 items-center">    
+                        <i class="fa-solid fa-user text-2xl"></i>
+                        <div class="text-sm">
+                            <h2>Cameron M.</h2>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-2xl">High-Quality!</h3>
                 </div>
-                <p>★ ★ ★ ★ ★</p>
-                <h3 class="font-bold text-xl">High-Quality & Durable!</h3>
                 <hr class="my-2">
-                <p>The custom dog tag is amazing—durable, high-quality, and the engraving lasts! Even after rough play, it still looks brand new.</p>
+                <p>The custom dog tag is durable, high-quality, and the engraving lasts—even after rough play!</p>
             </div>
 
             <div class="div4 grid-styles">
-                <div class="flex gap-3 items-center">     
-                    <i class="fa-solid fa-user"></i>
-                    <h2>Samuel S.</h2>
+                <div class="small-review-headings">
+                    <div class="flex gap-3 items-center">     
+                        <i class="fa-solid fa-user text-2xl"></i>
+                        <div class="text-sm">
+                            <h2>Samuel S.</h2>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-2xl">Best Store!</h3>
                 </div>
-                <p>★ ★ ★ ★ ★</p>
-                <h3 class="font-bold text-xl">Best Store!</h3>
                 <hr class="my-2">
-                <p>Amazing quality and super stylish! The custom leash and tag were perfect, and shipping was fast. My pup looks so dapper! 🐶✨</p>
+                <p>Amazing quality, stylish, and fast shipping! The leash and tag were perfect—my pup looks so dapper!</p>
             </div>
 
             <div class="div5 grid-styles">
-                <div class="flex gap-3 items-center">    
-                    <i class="fa-solid fa-user"></i>
-                    <h2>Abigail S.</h2>
+                <div class="review-headings">   
+                    <div class="flex items-center gap-3"> 
+                        <i class="fa-solid fa-user text-3xl"></i>
+                        <div class="flex flex-col">
+                            <h2>Abigail S.</h2>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-3xl">SO SO Adorable!</h3>
                 </div>
-                <p>★ ★ ★ ★ ★</p>
-                <h3 class="font-bold text-xl">Absolutely Adorable!</h3>
                 <hr class="my-2">
-                <p>I bought the raincoat for my little corgi, and I couldn’t be happier! It fits perfectly, keeps him dry, and the quality is amazing. The material is lightweight but still protective, and the hood is just the cutest touch. Every time we go out in the rain, people stop to compliment how adorable he looks. It also dries quickly, which is a huge plus. If you want something both practical and stylish for your pup, this is it!</p>
+                <p>I got the raincoat for my corgi, and it's perfect! Lightweight yet protective, it keeps him dry and comfy. The hood is adorable, and we get so many compliments. It also dries quickly—such a great buy!</p>
             </div>
 
             <div class="div6 grid-styles">
-                <div class="flex gap-3 items-center">    
-                    <i class="fa-solid fa-user"></i>
-                    <h2>Christopher K.</h2>
+                <div class="flex justify-between items-center review-headings">   
+                    <div class="flex items-center gap-3 "> 
+                        <i class="fa-solid fa-user text-3xl"></i>
+                        <div class="flex flex-col">
+                            <h2>Christopher K.</h2>
+                            <p>★ ★ ★ ★ ★</p>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-3xl">Great for Walks!</h3>
                 </div>
-                <p>★ ★ ★ ★ ★</p>
-                <h3 class="font-bold text-xl">Game-Changer for Walks!</h3>
                 <hr class="my-2">
-                <p>This harness has completely changed the way I walk my dog! My lab used to pull so much, and regular collars would just choke him. With this harness, the pressure is evenly distributed, so he’s comfortable and easier to control. It’s sturdy, easy to put on, and doesn’t rub or irritate his skin. Walks are now so much more enjoyable for both of us! If your pup is a puller, this is a lifesaver.</p>
+                <p>This harness makes walks so much easier! My lab used to pull and choke himself, but now the pressure is evenly distributed. It's sturdy, comfy, and easy to put on. A must-have for strong pullers!</p>
             </div>
 
         </div>
@@ -214,9 +244,10 @@
 
     <!-- Footer -->
     <footer>
-        <!-- Hot pink div -->
-        <div class="flex flex-col bg-[var(--special-green)] text-[var(--special-tan)] h-80 px-15 pt-15">
-            <div class="flex">
+        <!-- Main container -->
+        <div class="bg-[var(--special-green)] text-[var(--special-tan)] h-auto main-footer-container">
+            <!-- Hot pink div -->
+            <div class="flex hot-pink-div">
                 <!-- Purple div -->
                 <div class="flex w-1/2 justify-center gap-14 h-43">
                     <!-- Cyan div -->
@@ -298,6 +329,18 @@
         </div>
     </footer>
 
+    <!-- Java Script -->
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
 </body>
 </html>
 
@@ -349,6 +392,36 @@ So, this is my code for my styles for an animation of three cards:
 
 How could I make it so that it starts when I scroll to that part of the page instead of when first entering the page?
 
-ChatGPT:
+ChatGPT: Something about JavaScript that I did not attempt.
 
+-->
+
+<!-- 3/20
+When I refresh the page, the sidebar automatically pops up. How do i make it so the automatic is the sidebar is hidden except for when I click on the hamburger menu?
+ 
+ChatGPT: To make sure the sidebar is hidden by default when the page loads, you need to set its display property to none in CSS.
+
+Fix: Hide Sidebar by Default
+Add this to your CSS:
+
+css
+Copy code
+.sidebar {
+    display: none; /* Sidebar is hidden when the page loads */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 9999;
+    background-color: #588157a5;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+Why This Works
+display: none; ensures the sidebar is hidden when the page loads.
+Your JavaScript function (showSidebar()) will change the display to flex only when the menu button is clicked.
 -->
